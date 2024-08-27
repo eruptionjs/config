@@ -1,0 +1,41 @@
+{
+  "name": "@eruptionjs/config",
+  "version": "0.1.0",
+  "description": "Opinionated configuration for EruptionJS projects",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js",
+    "./prettier": "./src/prettier.js",
+    "./typescript": "./src/typescript.json",
+    "./reset.d.ts": "./src/reset.d.ts"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "eruption",
+    "eruptionjs",
+    "config",
+    "configuration",
+    "eslint",
+    "prettier",
+    "stylelint",
+    "lint-staged",
+    "biome"
+  ],
+  "author": "Rai Siqueira <me@raisiqueira.io> (https://eruptionjs.dev)",
+  "license": "MIT",
+  "dependencies": {
+    "@total-typescript/ts-reset": "^0.6.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.4",
+    "prettier": "^3.3.3",
+    "react": "^18.3.1",
+    "typescript": "^5.5.4"
+  },
+  "prettier": "./src/prettier.js"
+}
