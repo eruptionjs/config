@@ -1,6 +1,6 @@
 {
   "name": "@eruptionjs/config",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Opinionated configuration for EruptionJS projects",
   "publishConfig": {
     "access": "public"
@@ -14,6 +14,10 @@
     "./reset.d.ts": "./src/reset.d.ts",
     "./eslint": "./src/eslint.config.mjs",
     "./biome": "./src/biome.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eruptionjs/config.git"
   },
   "scripts": {
     "format": "prettier --write .",
