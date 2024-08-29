@@ -1,0 +1,206 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+	"formatter": {
+		"enabled": true,
+		"formatWithErrors": false,
+		"indentStyle": "space",
+		"indentWidth": 2,
+		"lineEnding": "lf",
+		"lineWidth": 100,
+		"attributePosition": "auto"
+	},
+	"linter": {
+		"rules": { "recommended": false },
+		"ignore": [
+			"**/.cache/**",
+			"**/node_modules/**",
+			"**/build/**",
+			"**/public/build/**",
+			"**/playwright-report/**",
+			"**/server-build/**",
+			"**/dist/**"
+		]
+	},
+	"javascript": {
+		"formatter": {
+			"jsxQuoteStyle": "double",
+			"quoteProperties": "asNeeded",
+			"trailingCommas": "all",
+			"semicolons": "asNeeded",
+			"arrowParentheses": "always",
+			"bracketSpacing": true,
+			"bracketSameLine": false,
+			"quoteStyle": "single",
+			"attributePosition": "auto"
+		},
+		"globals": [
+			"onscrollend",
+			"onpointerleave",
+			"oncontextrestored",
+			"onemptied",
+			"ongamepaddisconnected",
+			"onkeypress",
+			"onloadeddata",
+			"onmouseup",
+			"onvolumechange",
+			"onpaste",
+			"onstorage",
+			"onkeyup",
+			"onabort",
+			"oncut",
+			"ontransitionrun",
+			"onafterprint",
+			"onblur",
+			"ondurationchange",
+			"ontransitionstart",
+			"oncanplaythrough",
+			"onanimationend",
+			"onmouseleave",
+			"ondragleave",
+			"onplay",
+			"onunhandledrejection",
+			"onbeforeprint",
+			"onpointercancel",
+			"onsubmit",
+			"ondragstart",
+			"onmessage",
+			"location",
+			"onoffline",
+			"onappinstalled",
+			"onwheel",
+			"onended",
+			"onkeydown",
+			"onclick",
+			"onfocus",
+			"onscroll",
+			"ongamepadconnected",
+			"oncanplay",
+			"onpointerdown",
+			"ondeviceorientationabsolute",
+			"onauxclick",
+			"ondevicemotion",
+			"onratechange",
+			"ontransitionend",
+			"onchange",
+			"onselect",
+			"onbeforeinstallprompt",
+			"onbeforetoggle",
+			"onmouseout",
+			"ontimeupdate",
+			"ondragover",
+			"oncuechange",
+			"ontransitioncancel",
+			"onprogress",
+			"onbeforeinput",
+			"onpointerenter",
+			"onmouseenter",
+			"oninvalid",
+			"onpointerout",
+			"onpagereveal",
+			"onpause",
+			"onanimationstart",
+			"onwaiting",
+			"ondeviceorientation",
+			"onclose",
+			"onbeforeunload",
+			"oncancel",
+			"onseeked",
+			"onpointerover",
+			"ongotpointercapture",
+			"onloadedmetadata",
+			"onpageshow",
+			"onstalled",
+			"oncontextmenu",
+			"onreset",
+			"ondrag",
+			"onbeforematch",
+			"onload",
+			"onlostpointercapture",
+			"onsuspend",
+			"onselectionchange",
+			"onpagehide",
+			"onrejectionhandled",
+			"onunload",
+			"onanimationcancel",
+			"onmousedown",
+			"onpointerup",
+			"onmouseover",
+			"onformdata",
+			"oncontentvisibilityautostatechange",
+			"onresize",
+			"onsearch",
+			"ontoggle",
+			"exports",
+			"onpageswap",
+			"onbeforexrselect",
+			"onlanguagechange",
+			"ondragenter",
+			"onerror",
+			"onpointermove",
+			"onmousemove",
+			"ondrop",
+			"onhashchange",
+			"onsecuritypolicyviolation",
+			"onslotchange",
+			"oncopy",
+			"onanimationiteration",
+			"ondblclick",
+			"ondragend",
+			"onpointerrawupdate",
+			"onpopstate",
+			"onplaying",
+			"oncontextlost",
+			"onloadstart",
+			"onseeking",
+			"oninput",
+			"onmessageerror",
+			"onselectstart",
+			"onmousewheel",
+			"ononline"
+		]
+	},
+	"overrides": [
+		{
+			"include": ["**/*.tsx", "**/*.jsx"],
+			"javascript": { "globals": [] },
+			"linter": {
+				"rules": { "correctness": { "useJsxKeyInIterable": "warn" } }
+			}
+		},
+		{
+			"include": ["**/*.ts?(x)", "**/*.js?(x)"],
+			"linter": {
+				"rules": {
+					"correctness": {
+						"useExhaustiveDependencies": "warn",
+						"useHookAtTopLevel": "error"
+					}
+				}
+			}
+		},
+		{
+			"include": ["**/*.js?(x)"],
+			"linter": { "rules": { "correctness": { "noUnusedVariables": "warn" } } }
+		},
+		{
+			"include": ["**/*.ts?(x)"],
+			"javascript": { "globals": [] },
+			"linter": {
+				"rules": {
+					"correctness": { "noUnusedVariables": "warn" },
+					"style": { "useImportType": "warn" }
+				}
+			}
+		},
+		{
+			"ignore": [
+				"**/tests/**",
+				"**/#tests/**",
+				"**/__tests__/**/*",
+				"**/*.test.*"
+			],
+			"include": ["**/*.ts?(x)", "**/*.js?(x)"],
+			"linter": { "rules": {} }
+		}
+	]
+}

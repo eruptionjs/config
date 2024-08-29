@@ -14,8 +14,13 @@ While you have full control over the configuration, you can use the settings in 
 
 ### Prettier configuration
 
-Just add the following to your `package.json`:
+Install `prettier` on your project, and add the eruptionjs configuration on your `package.json`:
 
+```bash
+npm install --save-dev prettier
+```
+
+**package.json**
 ```json
 {
   // ... Your existing configuration
@@ -46,14 +51,35 @@ To use the configuration, add the following to your `tsconfig.json` (create it i
 
 The Eruption ESLint configuration extends the base ESLint configuration with additional rules and settings.
 
-To use the configuration, add the following to your `eslint.config.js` file (create it if it doesn't exist):
+To use the configuration, install `eslint` on your project, and add the following to your `eslint.config.js` file (create it if it doesn't exist):
 
+```bash
+npm install --save-dev eslint
+```
+
+**eslint.config.js**
 ```js
 import { config as defaultConfig } from '@eruptionjs/config/eslint'
 
 /** @type {import("eslint").Linter.Config} */
 export default [...defaultConfig]
 ```
+
+### Biome configuration (Experimental 🧪)
+
+Install `biome` on your project, and add the eruptionjs configuration on your `biome.json` file:
+
+```bash
+npm install --save-dev @biomejs/biome
+```
+
+**biome.json**
+```json
+{
+  "extends": "@eruptionjs/config/biome"
+}
+```
+
 
 ## License
 

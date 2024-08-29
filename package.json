@@ -2,6 +2,9 @@
   "name": "@eruptionjs/config",
   "version": "0.1.0",
   "description": "Opinionated configuration for EruptionJS projects",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.js",
   "type": "module",
   "exports": {
@@ -9,7 +12,8 @@
     "./prettier": "./src/prettier.js",
     "./typescript": "./src/typescript.json",
     "./reset.d.ts": "./src/reset.d.ts",
-    "./eslint": "./src/eslint.config.mjs"
+    "./eslint": "./src/eslint.config.mjs",
+    "./biome": "./src/biome.json"
   },
   "scripts": {
     "format": "prettier --write .",
