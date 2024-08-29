@@ -9,6 +9,7 @@ npm install --save-dev @eruptionjs/config
 ```
 
 ## usage
+
 While you have full control over the configuration, you can use the settings in this project as a starting point for your own. In many cases, the default configurations may be all you need.
 
 ### Prettier configuration
@@ -43,7 +44,16 @@ To use the configuration, add the following to your `tsconfig.json` (create it i
 
 ### ESLint configuration
 
-WIP 🚧
+The Eruption ESLint configuration extends the base ESLint configuration with additional rules and settings.
+
+To use the configuration, add the following to your `eslint.config.js` file (create it if it doesn't exist):
+
+```js
+import { config as defaultConfig } from '@eruptionjs/config/eslint'
+
+/** @type {import("eslint").Linter.Config} */
+export default [...defaultConfig]
+```
 
 ## License
 

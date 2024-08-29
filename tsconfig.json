@@ -1,6 +1,6 @@
 {
   "extends": "./src/typescript.json",
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.js", "src/**/*.jsx"],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
   "exclude": ["node_modules"],
   "compilerOptions": {
     "types": ["./src/reset.d.ts"]
