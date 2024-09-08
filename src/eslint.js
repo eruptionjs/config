@@ -55,15 +55,18 @@ export const config = [
     rules: {
       'no-unexpected-multiline': ERROR,
       'no-warning-comments': [ERROR, { terms: ['FIXME'], location: 'anywhere' }],
-      'import/no-duplicates': [WARN, { 'prefer-inline': true }],
-      'import/order': [
-        WARN,
-        {
-          alphabetize: { order: 'asc', caseInsensitive: true },
-          pathGroups: [{ pattern: '#*/**', group: 'internal' }],
-          groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
-        },
-      ],
+      'import/no-duplicates': [ERROR, { 'prefer-inline': true }],
+      'import/no-self-import': ERROR,
+      'import/no-relative-packages': ERROR,
+      'import/no-relative-parent-imports': ERROR,
+      'import/consistent-type-specifier-style': [ERROR, 'prefer-inline'],
+      'import/no-empty-named-blocks': ERROR,
+      'import/no-extraneous-dependencies': ERROR,
+      'import/no-import-module-exports': ERROR,
+      'import/newline-after-import': ERROR,
+      'import/group-exports': ERROR,
+      'import/exports-last': ERROR,
+      'import/no-useless-path-segments': [ERROR, { noUselessIndex: true }],
     },
   },
 
@@ -96,7 +99,7 @@ export const config = [
         },
         rules: {
           'react-hooks/rules-of-hooks': ERROR,
-          'react-hooks/exhaustive-deps': WARN,
+          'react-hooks/exhaustive-deps': ERROR,
         },
       }
     : null,
@@ -149,8 +152,8 @@ export const config = [
               fixStyle: 'inline-type-imports',
             },
           ],
-          '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
-          '@typescript-eslint/no-floating-promises': 'error',
+          '@typescript-eslint/no-misused-promises': [ERROR, { checksVoidReturn: false }],
+          '@typescript-eslint/no-floating-promises': ERROR,
         },
       }
     : null,
