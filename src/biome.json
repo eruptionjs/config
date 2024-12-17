@@ -1,5 +1,5 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
 	"formatter": {
 		"enabled": true,
 		"formatWithErrors": false,
@@ -10,7 +10,9 @@
 		"attributePosition": "auto"
 	},
 	"linter": {
-		"rules": { "recommended": false },
+		"rules": {
+			"recommended": false
+		},
 		"ignore": [
 			"**/.cache/**",
 			"**/node_modules/**",
@@ -161,14 +163,26 @@
 	},
 	"overrides": [
 		{
-			"include": ["**/*.tsx", "**/*.jsx"],
-			"javascript": { "globals": [] },
+			"include": [
+				"**/*.tsx",
+				"**/*.jsx"
+			],
+			"javascript": {
+				"globals": []
+			},
 			"linter": {
-				"rules": { "correctness": { "useJsxKeyInIterable": "warn" } }
+				"rules": {
+					"correctness": {
+						"useJsxKeyInIterable": "warn"
+					}
+				}
 			}
 		},
 		{
-			"include": ["**/*.ts?(x)", "**/*.js?(x)"],
+			"include": [
+				"**/*.ts?(x)",
+				"**/*.js?(x)"
+			],
 			"linter": {
 				"rules": {
 					"correctness": {
@@ -179,16 +193,32 @@
 			}
 		},
 		{
-			"include": ["**/*.js?(x)"],
-			"linter": { "rules": { "correctness": { "noUnusedVariables": "warn" } } }
-		},
-		{
-			"include": ["**/*.ts?(x)"],
-			"javascript": { "globals": [] },
+			"include": [
+				"**/*.js?(x)"
+			],
 			"linter": {
 				"rules": {
-					"correctness": { "noUnusedVariables": "warn" },
-					"style": { "useImportType": "warn" }
+					"correctness": {
+						"noUnusedVariables": "warn"
+					}
+				}
+			}
+		},
+		{
+			"include": [
+				"**/*.ts?(x)"
+			],
+			"javascript": {
+				"globals": []
+			},
+			"linter": {
+				"rules": {
+					"correctness": {
+						"noUnusedVariables": "warn"
+					},
+					"style": {
+						"useImportType": "warn"
+					}
 				}
 			}
 		},
@@ -199,8 +229,13 @@
 				"**/__tests__/**/*",
 				"**/*.test.*"
 			],
-			"include": ["**/*.ts?(x)", "**/*.js?(x)"],
-			"linter": { "rules": {} }
+			"include": [
+				"**/*.ts?(x)",
+				"**/*.js?(x)"
+			],
+			"linter": {
+				"rules": {}
+			}
 		}
 	]
 }
