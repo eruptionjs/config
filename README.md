@@ -21,6 +21,7 @@ npm install --save-dev prettier
 ```
 
 **package.json**
+
 ```json
 {
   // ... Your existing configuration
@@ -58,6 +59,7 @@ npm install --save-dev eslint
 ```
 
 **eslint.config.js**
+
 ```js
 import { config as defaultConfig } from '@eruptionjs/config/eslint'
 
@@ -74,12 +76,12 @@ npm install --save-dev @biomejs/biome
 ```
 
 **biome.json**
+
 ```json
 {
   "extends": "@eruptionjs/config/biome"
 }
 ```
-
 
 ## License
 
