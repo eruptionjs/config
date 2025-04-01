@@ -23,7 +23,8 @@
     "format": "prettier --write .",
     "typecheck": "tsc",
     "lint": "eslint .",
-    "validate": "concurrently \"pnpm run format\" \"pnpm run lint\" \"pnpm run typecheck\""
+    "validate": "concurrently \"pnpm run format\" \"pnpm run lint\" \"pnpm run typecheck\"",
+    "upgrade": "pnpx npm-check-updates --interactive --format group --install never"
   },
   "keywords": [
     "eruption",
@@ -39,32 +40,32 @@
   "author": "Rai Siqueira <me@raisiqueira.io> (https://eruptionjs.dev)",
   "license": "MIT",
   "dependencies": {
-    "@eslint/compat": "^1.2.4",
-    "@eslint/eslintrc": "^3.2.0",
-    "@eslint/js": "^9.17.0",
+    "@eslint/compat": "^1.2.8",
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.23.0",
     "@total-typescript/ts-reset": "^0.6.1",
-    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
-    "eslint-plugin-import-x": "^4.5.1",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "eslint-plugin-import-x": "^4.10.0",
     "eslint-plugin-jest-dom": "^5.5.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-react-refresh": "^0.4.16",
-    "eslint-plugin-testing-library": "^6.5.0",
+    "eslint-plugin-prettier": "^5.2.5",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "eslint-plugin-testing-library": "^7.1.1",
     "eslint-plugin-vitest": "^0.5.4",
-    "globals": "^15.13.0",
-    "typescript-eslint": "^8.18.1"
+    "globals": "^16.0.0",
+    "typescript-eslint": "^8.29.0"
   },
   "devDependencies": {
-    "@types/react": "^19.0.1",
-    "concurrently": "^8.2.2",
-    "eslint": "^9.17.0",
-    "pkg-pr-new": "^0.0.24",
-    "prettier": "^3.4.2",
-    "react": "^18.3.1",
-    "typescript": "^5.7.2"
+    "@types/react": "^19.0.12",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.23.0",
+    "pkg-pr-new": "^0.0.42",
+    "prettier": "^3.5.3",
+    "react": "^19.1.0",
+    "typescript": "^5.8.2"
   },
   "prettier": "./src/prettier.js",
-  "packageManager": "pnpm@9.9.0"
+  "packageManager": "pnpm@10.7.1"
 }
