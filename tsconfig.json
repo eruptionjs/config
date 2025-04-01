@@ -1,5 +1,5 @@
 {
-  "extends": "./src/typescript.json",
+  "extends": "./src/tsconfig.json",
   "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
   "exclude": ["node_modules"],
   "compilerOptions": {
