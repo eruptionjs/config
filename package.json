@@ -1,6 +1,6 @@
 {
   "name": "@eruptionjs/config",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "description": "Opinionated configuration for EruptionJS projects",
   "publishConfig": {
     "access": "public"
@@ -10,7 +10,7 @@
   "exports": {
     ".": "./src/index.js",
     "./prettier": "./src/prettier.js",
-    "./typescript": "./src/tsconfig.json",
+    "./typescript": "./src/typescript.json",
     "./reset.d.ts": "./src/reset.d.ts",
     "./eslint": "./src/eslint.js",
     "./biome": "./src/biome.json"

@@ -55,6 +55,7 @@ export const config = [
     rules: {
       'no-unexpected-multiline': ERROR,
       'no-warning-comments': [ERROR, { terms: ['FIXME'], location: 'anywhere' }],
+      'no-console': [ERROR, { allow: ['warn', 'error'] }],
       'import/no-duplicates': [ERROR, { 'prefer-inline': true }],
       'import/no-self-import': ERROR,
       'import/no-relative-packages': ERROR,
