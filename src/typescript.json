@@ -3,11 +3,7 @@
   "compilerOptions": {
     "target": "ES2022",
     "useDefineForClassFields": true,
-    "lib": [
-      "ES2022",
-      "DOM",
-      "DOM.Iterable"
-    ],
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "Preserve",
     "skipLibCheck": true,
     "moduleResolution": "Bundler",
@@ -28,7 +24,5 @@
     "noUncheckedSideEffectImports": true,
     "noUncheckedIndexedAccess": true
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
