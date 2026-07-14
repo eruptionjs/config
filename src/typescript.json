@@ -13,7 +13,6 @@
     "moduleDetection": "force",
     "noEmit": true,
     "allowJs": false,
-    "esModuleInterop": false,
     "jsx": "react-jsx",
     "strict": true,
     "noUnusedLocals": true,
